@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author Jonah
+ * @author Jonah, Jonathan, Raven, Torin
  *
  */
 module auteline {
