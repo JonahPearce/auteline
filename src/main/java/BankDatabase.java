@@ -16,7 +16,7 @@ public class BankDatabase {
   // no-argument BankDatabase constructor initializes accounts
   public BankDatabase() {
     accounts = new Account[2]; // just 2 accounts for testing
-    accounts[0] = new Account(55555, 55555, 1000.0, 1200.0);
+    accounts[0] = new Account(11111, 11111, 1000.0, 1200.0);
     accounts[1] = new Account(98765, 56789, 200.0, 200.0);
   }
 
