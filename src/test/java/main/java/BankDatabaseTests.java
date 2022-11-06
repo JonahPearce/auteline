@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import main.java.ATM;
 import main.java.BankDatabase;
 
-class AutelineTests {
+class BankDatabaseTests {
 	
 	@Test
 	void testValidAcct() {

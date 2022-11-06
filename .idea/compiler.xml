@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="auteline" options="--add-modules java.sql,java.desktop" />
+      <module name="auteline" options="" />
     </option>
   </component>
 </project>
