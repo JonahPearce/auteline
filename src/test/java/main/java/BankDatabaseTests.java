@@ -1,4 +1,4 @@
-package main.tests;
+package main.java;
 //testing -raven
 import static org.junit.jupiter.api.Assertions.*;
 

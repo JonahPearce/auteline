@@ -35,6 +35,17 @@ public class ATM {
     bankDatabase = new BankDatabase(); // create acct info database
   }
 
+  // no-argument ATM constructor initializes instance variables
+  public ATM(Screen inputScreen, Keypad inputKeypad, CashDispenser inputCashDispenser, DepositSlot inputDepositSlot, BankDatabase inputBankDatabase) {
+    userAuthenticated = false; // user is not authenticated to start
+    currentAccountNumber = 0; // no current account number to start
+    screen = inputScreen; // create screen
+    keypad = inputKeypad; // create keypad
+    cashDispenser = inputCashDispenser; // create cash dispenser
+    depositSlot = inputDepositSlot; // create deposit slot
+    bankDatabase = inputBankDatabase; // create acct info database
+  }
+
   // start ATM
   public void run() {
     // welcome and authenticate user; perform transactions
