@@ -1,11 +1,9 @@
 package main.java;
 //testing -raven
-import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
-
-import main.java.ATM;
 import main.java.BankDatabase;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 class BankDatabaseTests {
 	
