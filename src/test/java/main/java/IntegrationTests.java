@@ -3,7 +3,17 @@ package main.java;
 import static org.mockito.Mockito.*;
 import org.junit.*;
 
-import main.java.*;
+import main.java.ATM;
+import main.java.BankDatabase;
+import main.java.CashDispenser;
+import main.java.DepositSlot;
+import main.java.Keypad;
+import main.java.Screen;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
 
 public class IntegrationTests {
 
@@ -32,25 +42,5 @@ public class IntegrationTests {
 
     }
 
-    @Test
-    public void DepositMoney() {
 
-        when(fakeKeypad.getInput()).thenReturn(11111, 11111, 3, 50, 1, 4);
-
-        atm.run();
-
-        verify(fakeScreen, times(1)).displayDollarAmount(1200.50);
-
-    }
-
-    @Test
-    public void WithdrawalTest() {
-
-        when(fakeKeypad.getInput()).thenReturn(11111, 11111, 2, 5, 1, 4);
-
-        atm.run();
-
-        verify(fakeScreen, times(1)).displayDollarAmount(1000.0);
-
-    }
 }
