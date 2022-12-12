@@ -172,13 +172,18 @@ class BankDatabaseTests {
             atmList[c].run();
         }
         verify(fakeScreen, times(9)).displayDollarAmount(1200.00);
-        //deposit $350
+        //deposit ($350)
         for (int d = 0 ; d < atmList.length ; d++) {
             when(fakeKeypad.getInput()).thenReturn(ids[d], passwords[d], 3 , 35000, 1, 4);
             atmList[d].run();
         }
         verify(fakeScreen, times(9)).displayDollarAmount(1550.00);
-
+        //withdraw ($200)
+        for (int d = 0 ; d < atmList.length ; d++) {
+            when(fakeKeypad.getInput()).thenReturn(ids[d], passwords[d], 2 , 5, 1, 4);
+            atmList[d].run();
+        }
+        verify(fakeScreen, times(9)).displayDollarAmount(1350.00);
     }
 
 }
